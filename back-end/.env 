@@ -1,0 +1,4 @@
+MONGODB_USER=anabeatriz
+MONGODB_PASS=r55cTejP7jbYur9V
+MONGODB_SERVER=cluster0.enxaepe.mongodb.net
+MONGODB_DATABASE=sample_store
