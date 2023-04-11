@@ -11,7 +11,7 @@ const schema = mongoose.Schema({
         type: Number,
         required: true
     },
-    customer_id:{
+    customer:{
         type: mongoose.ObjectId, //Tipo para chave estrangeira
         ref: 'Customer',         // model estrangeira 
         required: true

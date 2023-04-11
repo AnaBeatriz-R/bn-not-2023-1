@@ -9,15 +9,14 @@ const schema = mongoose.Schema({
     type: String,
     required: false
   },
-  id_document: {
+  country: {
     type: String,
-    required: false
+    required: true
   },
   email: {
     type: String,
     required: false
   },
-  // Subdocumento incorporado
   address: {
     street: {
       type: String,
@@ -57,4 +56,4 @@ const schema = mongoose.Schema({
   3º: nome da collection no banco de dados (convenção: mesmo nome do model, mas com
       letra minúscula e no plural)
 */
-module.exports = mongoose.model('Customer', schema, 'customers')
+module.exports = mongoose.model('Supplier', schema, 'suppliers')
