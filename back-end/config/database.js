@@ -29,9 +29,9 @@ module.exports = function(){
         console.log('=> MONGOOSE! desconectado do servidor')
     )
 
-    mongoose.connection.on('error', () =>
-        console.log('** MONGOOSE! ERRO ao se conectar no servidor' + error)
-    )
+    mongoose.connection.on('error', error => 
+    console.error('** MONGOOSE! ERRO ao se conectar ao servidor: ' + error)
+  )
 
     //Quando for detectado o comando de interrupção Ctrl+C
     process.on('SIGINT', () => {
